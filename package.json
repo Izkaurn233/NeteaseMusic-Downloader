@@ -1,0 +1,24 @@
+{
+  "name": "netease-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地网易云音乐解析 CLI（交互模式 / 搜索 / 歌曲 / 歌词 / 歌单 / 专辑 / 歌手 / 下载）",
+  "main": "src/cli.js",
+  "bin": {
+    "nj": "bin/nj.js"
+  },
+  "scripts": {
+    "start": "node bin/nj.js",
+    "web": "node bin/nj-web.js",
+    "test": "node test/smoke.js && node test/download.js && node test/playback.js && node test/web.js",
+    "test:browser": "node test/browser-cookie.js",
+    "test:login": "node test/integration-login.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "optionalDependencies": {
+    "qrcode-terminal": "^0.12.0"
+  }
+}
